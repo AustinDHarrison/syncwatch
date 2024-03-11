@@ -13,10 +13,16 @@
         <h1>Enter a Cinema ID</h1>
         <h6><a href="/?popup=createCinema">Or create a cinema</a></h4>
     </div>
-    <div class="input-group mb-3">
+    <!-- <div class="input-group mb-3">
         <input type="text" class="form-control input-themed" placeholder="Cinema ID" aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button class="btn btn-outline-themed" type="button" id="button-addon2">Join</button>
-    </div>
+        <button class="btn btn-themed" type="button" id="button-addon2">Join</button>
+    </div> -->
+    <p class="text-center mt-5"><button class="btn btn-themed" onclick=`window.loaction.href = "/cinemas"`>Cinemas List</button></p>
+    <script type="module" id="sd-page-load">
+        import { pageLoad } from "/scripts/sw-main.js";
+        pageLoad()
+        document.getElementById("sd-page-load").remove()
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
